@@ -1,0 +1,84 @@
+# ============================================
+# FastAPI and Server
+# ============================================
+fastapi==0.104.1                    # Web framework
+uvicorn[standard]==0.24.0           # ASGI server
+python-multipart==0.0.6             # File upload support
+python-dotenv==1.0.0                # Environment variable management
+pydantic==2.5.0                     # Data validation
+pydantic-settings==2.1.0            # Settings management
+
+# ============================================
+# Real-time Communication
+# ============================================
+python-socketio==5.10.0             # Socket.IO server
+python-engineio==4.8.0              # Engine.IO (Socket.IO transport)
+
+# ============================================
+# Database - PostgreSQL
+# ============================================
+psycopg2-binary==2.9.9              # PostgreSQL adapter
+asyncpg==0.29.0                     # Async PostgreSQL driver
+sqlalchemy==2.0.23                  # ORM (optional, for complex queries)
+
+# ============================================
+# Vector Store - FAISS
+# ============================================
+faiss-cpu==1.7.4                    # Facebook AI Similarity Search
+numpy==1.26.2                       # Numerical computing (required by FAISS)
+
+# ============================================
+# Document Processing
+# ============================================
+pdfplumber==0.10.3                  # PDF text extraction
+PyPDF2==3.0.1                       # Alternative PDF parser (backup)
+beautifulsoup4==4.12.2              # HTML parsing (web scraping)
+lxml==4.9.3                         # XML/HTML parser (faster than html.parser)
+requests==2.31.0                    # HTTP requests (for GitHub API, web scraping)
+
+# ============================================
+# OpenAI Integration
+# ============================================
+openai==1.3.7                       # OpenAI API (embeddings + GPT-4o-mini)
+tiktoken==0.5.2                     # Token counting (for chunking)
+
+# ============================================
+# Optional: LlamaParse (Cloud PDF parsing)
+# ============================================
+# llama-parse==0.4.0                # Uncomment if using LlamaParse
+
+# ============================================
+# Utilities
+# ============================================
+httpx==0.25.2                       # Async HTTP client
+aiofiles==23.2.1                    # Async file operations
+python-jose[cryptography]==3.3.0    # JWT tokens (for auth)
+passlib[bcrypt]==1.7.4              # Password hashing (for admin auth)
+
+# ============================================
+# Data Processing
+# ============================================
+pandas==2.1.4                       # Data manipulation (optional, for analytics)
+regex==2023.10.3                    # Advanced regex (for text cleaning)
+
+# ============================================
+# Logging & Monitoring
+# ============================================
+structlog==23.2.0                   # Structured logging
+python-json-logger==2.0.7           # JSON log formatting
+
+# ============================================
+# Testing
+# ============================================
+pytest==7.4.3                       # Testing framework
+pytest-asyncio==0.21.1              # Async test support
+pytest-cov==4.1.0                   # Code coverage
+httpx==0.25.2                       # Test client (async)
+faker==20.1.0                       # Generate fake data for tests
+
+# ============================================
+# Development Tools
+# ============================================
+black==23.11.0                      # Code formatter
+ruff==0.1.6                         # Fast linter
+mypy==1.7.1                         # Type checker
